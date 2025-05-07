@@ -11,5 +11,10 @@
     return items.filter((item) => item.rating >= 4);
   }
 
+  //   Problem 03
+  function concatenateArrays<T>(...arrays: T[][]): T[] {
+    return ([] as T[]).concat(...arrays);
+  }
+
   //
 }
