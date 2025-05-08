@@ -84,5 +84,16 @@
     return "Weekday";
   }
 
-  //
+  // Problem Eight
+  async function squareAsync(n: number): Promise<number> {
+    if (n < 0) {
+      throw new Error("Negative number not allowed");
+    }
+
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(n * n);
+      }, 1000);
+    });
+  }
 }
