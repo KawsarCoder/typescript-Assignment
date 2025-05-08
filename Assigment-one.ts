@@ -1,22 +1,17 @@
 {
-  // Problem O1
   function formatString(input: string, toUpper?: boolean): string {
     return toUpper === false ? input.toLowerCase() : input.toUpperCase();
   }
 
-  //Problem 02
   function filterByRating(
     items: { title: string; rating: number }[]
   ): { title: string; rating: number }[] {
     return items.filter((item) => item.rating >= 4);
   }
 
-  //   Problem 03
   function concatenateArrays<T>(...arrays: T[][]): T[] {
     return ([] as T[]).concat(...arrays);
   }
-
-  // Problem 04
 
   class Vehicle {
     private make: string;
@@ -45,12 +40,10 @@
     }
   }
 
-  // Problem five
   function processValue(value: string | number): number {
     return typeof value === "string" ? value.length : value * 2;
   }
 
-  // Problem six
   interface Product {
     name: string;
     price: number;
@@ -66,7 +59,6 @@
     }
   }
 
-  // Problem seven
   enum Day {
     Monday,
     Tuesday,
@@ -84,7 +76,6 @@
     return "Weekday";
   }
 
-  // Problem Eight
   async function squareAsync(n: number): Promise<number> {
     if (n < 0) {
       throw new Error("Negative number not allowed");
